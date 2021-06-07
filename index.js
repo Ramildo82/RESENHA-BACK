@@ -16,7 +16,7 @@ app.route('/login').get( (req, res) => {
     res.status(200).json(listaCadastro)
 })
 
-app.route ('/cadastro').post((req, res) => {    
+app.route ('/login/cadastro').post((req, res) => {    
     listaCadastro.push(req.body)
     res.status(200).send("Cadastro realizado com sucesso")
 })
